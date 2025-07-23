@@ -1,18 +1,50 @@
-## Getting Started
+# Tipos de Variáveis em Java — Primitivos e Referência
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto demonstra, com exemplos práticos e explicados, todos os **principais tipos de variáveis em Java**, incluindo os tipos **primitivos** e os tipos **por referência**.
 
-## Folder Structure
+💡 Útil para quem está começando com Java ou quer revisar conceitos básicos de tipos de dados.
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## ✅ O que o código demonstra
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 🔹 Tipos Primitivos
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+| Tipo       | Descrição                       | Exemplo                   |
+|------------|----------------------------------|----------------------------|
+| `byte`     | Números inteiros pequenos       | `byte idadeByte = 30;`     |
+| `short`    | Números inteiros maiores        | `short populacaoCidade = 25000;` |
+| `int`      | Números inteiros padrão         | `int populacaoBrasil = 215000000;` |
+| `long`     | Números inteiros grandes        | `long populacaoMundial = 8000000000L;` |
+| `float`    | Números decimais simples        | `float precoProduto = 99.99f;` |
+| `double`   | Números decimais com mais precisão | `double saldoBancario = 1000000.75;` |
+| `char`     | Caractere único                 | `char letraInicial = 'K';` |
+| `boolean`  | Verdadeiro ou falso             | `boolean estaLogado = true;` |
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### 🔹 Tipos por Referência
+
+| Tipo         | Descrição                                | Exemplo                                   |
+|--------------|--------------------------------------------|--------------------------------------------|
+| `String`     | Texto (cadeia de caracteres)              | `String nome = "Kaue Dota";`              |
+| `Array`      | Lista fixa de elementos                   | `int[] numeros = {1, 2, 3, 4, 5};`         |
+| `ArrayList`  | Lista dinâmica                            | `ArrayList<String> frutas = new ArrayList<>();` |
+| `HashMap`    | Mapa de chave-valor                       | `HashMap<String, Integer> estoque = new HashMap<>();` |
+| `LocalDate`  | Representação de data atual               | `LocalDate hoje = LocalDate.now();`       |
+| `Scanner`    | Entrada de dados pelo terminal            | `Scanner scanner = new Scanner(System.in);` |
+
+---
+
+## 🧪 Execução do Código
+
+O código pede que o usuário digite um e-mail e exibe um **resumo de todas as variáveis utilizadas** no final.
+
+### ▶️ Como rodar:
+1. Compile o arquivo:
+
+javac TiposVariaveis.java
+
+2. Execute o programa:
+
+java TiposVariaveis
